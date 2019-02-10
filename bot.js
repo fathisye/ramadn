@@ -11,7 +11,7 @@ client.on('message', async message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "460389855382470662") return
+  if (message.author.id !== "543718891130454022") return
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
@@ -485,7 +485,7 @@ client.on("guildCreate", guild => {
     .addField(' **Bot joined to :**[' + `${guild.name}` + ']   **By : **' + `${guild.owner.user.username}` + '')
     .setFooter('The bot is happy')
     .setTimestamp()
-    client.channels.get("476342429575020544").send(embed)
+    client.channels.get("543719019782340609").send(embed)
   });
 
   client.on("guildDelete", guild => {
@@ -494,7 +494,7 @@ client.on("guildCreate", guild => {
   .addField(' **Bot left from :**[' + `${guild.name}` + ']     **By : **' + `${guild.owner.user.username}` +  ' ')
   .setFooter('The bot is crying')
   .setTimestamp()
-  client.channels.get("476342429575020544").send(embed)
+  client.channels.get("543719019782340609").send(embed)
 });
 
 client.login(process.env.BOT_TOKEN);
